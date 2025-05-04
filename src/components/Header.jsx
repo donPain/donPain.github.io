@@ -6,6 +6,7 @@ export default function Header() {
         <a href="https://github.com/donPain" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/eduardodonzelipaino/" target="_blank">LinkedIn</a>
         <a href="https://medium.com/@2l/apache-flink-kafka-real-time-processing-and-store-in-postgresql-87b2d2238023" target="_blank">Medium</a>
+        <a href="mailto:eduardo.donzeli@gmail.com">Contact</a>
       </nav>
     </header>
   )

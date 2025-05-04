@@ -16,7 +16,7 @@ export default function ThreeScene() {
   }, [])
 
   return (
-    <div className="h-[400px] w-full">
+    <div className="h-[300px] w-full">
       <Canvas camera={{ position: [0, 0, 15], fov: 65, zoom: 60 }}>
         <Points positions={points} stride={3}>
           <PointMaterial size={0.3} color="#ffffff" />
