@@ -1,6 +1,8 @@
 "use client";
 
 import { motion, useReducedMotion } from "motion/react";
+import Image from "next/image";
+import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
 import { content } from "@/lib/content";
 import { Cta } from "@/components/ui/cta";
 import { Eyebrow } from "@/components/ui/eyebrow";
@@ -80,6 +82,46 @@ export function Hero() {
                 label={content.hero.secondaryCta.label}
                 variant="secondary"
               />
+            </motion.div>
+
+            <motion.div
+              {...reveal(4)}
+              className="mt-6 flex flex-wrap items-center gap-4"
+            >
+              <div className="inline-flex items-center gap-3 rounded-full border border-white/[0.08] bg-white/[0.03] p-1 pr-4 backdrop-blur-sm">
+                <div className="relative h-11 w-11 overflow-hidden rounded-full ring-1 ring-white/[0.12]">
+                  <Image
+                    src="/donpain-profile.jpg"
+                    alt="Eduardo Donzeli"
+                    fill
+                    sizes="44px"
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+                <div className="min-w-0">
+                  <span className="block font-mono text-[10px] uppercase tracking-[0.18em] text-text-faint">
+                    Author
+                  </span>
+                  <span className="block text-sm text-text-muted">
+                    Eduardo Donzeli
+                  </span>
+                </div>
+              </div>
+
+              <a
+                href={content.meta.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-1.5 font-mono text-[11.5px] uppercase tracking-[0.18em] text-text-muted transition-colors duration-200 hover:text-text"
+              >
+                <span>GitHub</span>
+                <ArrowUpRight
+                  size={11}
+                  weight="bold"
+                  className="opacity-50 transition-all duration-200 group-hover:translate-x-[1px] group-hover:-translate-y-[1px] group-hover:opacity-100"
+                />
+              </a>
             </motion.div>
           </div>
 
