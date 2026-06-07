@@ -5,7 +5,7 @@ export const content = {
     role: "Senior Java Developer · Backend Engineer",
     email: "eduardo.donzeli@gmail.com",
     linkedin: "https://www.linkedin.com/in/eduardodonzelipaino/",
-    github: "https://github.com/eduardodonzeli",
+    github: "https://github.com/donPain",
     location: "Brazil",
     year: 2026,
   },
@@ -190,7 +190,7 @@ export const content = {
     primaryCta: { label: "Get in touch", href: "mailto:eduardo.donzeli@gmail.com" },
     secondary: [
       { label: "LinkedIn", href: "https://www.linkedin.com/in/eduardodonzelipaino/" },
-      { label: "GitHub", href: "https://github.com/eduardodonzeli" },
+      { label: "GitHub", href: "https://github.com/donPain" },
       { label: "Email", href: "mailto:eduardo.donzeli@gmail.com" },
     ],
   },
